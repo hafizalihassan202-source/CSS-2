@@ -1,0 +1,149 @@
+<html>
+<head>
+    <title>My Web Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f9331de05e.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <h1 id="null">
+        Welcome to My Web Page
+    </h1>
+    <br>
+    <br>
+    <h1>
+        Paragraph
+    </h1>
+    <p class="para1"> 
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt harum quasi, repellat qui consectetur saepe animi deleniti id rem ratione assumenda atque vitae corporis nobis nemo totam odit error culpa.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam veniam quod officiis consequuntur eius. Exercitationem totam facere nobis nisi neque sit recusandae obcaecati veritatis dolorum voluptatem nulla ut, cum nesciunt?
+    </p>
+    <h2>
+        Table and border testing
+    </h2>
+    <div class="table-container">
+    <table>
+            <tr>
+                <th colspan="2" style="text-align: center;">name</th>
+                <th>class</th>
+                <th>marks</th>
+            </tr>
+            <tr>
+                <td>umer</td>
+                <td>mujAHID</td>
+                <td>7th</td>
+                <td>78</td>
+            </tr>
+            <tr>
+                <td>ali</td>
+                <td>mujAHID</td>
+                <td>8th</td>
+                <td>88</td>
+            </tr>
+            <tr>
+                <td>ahmed</td>
+                <td>mujAHID</td>
+                <td>9th</td>
+                <td>98</td>
+            </tr>
+
+    </table>
+    </div>
+    
+    
+        <h1>
+            Icons
+        </h1>
+        <i class="fa-solid fa-house"></i>
+        <i class="fa-solid fa-user"></i>
+        <br>
+        <h1> Link Button</h1>
+        <a href="#" class="button"> Click Me </a>
+        <br>
+        <h2>
+            Responsive Images
+        </h2>
+        <div class="Image-box" id="img1">Box 1<br> 
+            <img src="/img_5terre.jpg" alt="Forest" style="width: 100%;">
+            <button oneclick="removeElement()">Remove</button>
+            </div>
+            <div class="Image-box" id="img2">Box 2<br>
+            <img src="/img_forest.jpg" alt="Forest" style="width: 100%;">
+            <button oneclick="ChangeVisibility()">Hide</button>
+            </div>
+            <div class="Image-box" id="img3">Box3<br>
+                <img src="/img_lights.jpg" alt="Lights" style="width: 100%;">
+                <button oneclick="resetElement()">Reset</button>
+                </div>
+<script>
+    function removeElement(){
+        document.getElementById("img1").style.visibility="hidden";
+    }
+    function ChangeVisibility(){
+        document.getElementById("img2").style.display="none";
+    }
+    function resetElement(){
+  document.getElementById("img1").style.display = "block";
+  document.getElementById("img2").style.visibility = "visible";
+        
+    }
+    </script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h2>
+        flexbox
+    </h2>
+    <div class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        </div>
+        <br>
+        <br>
+        <h2>
+            Responsive Images
+        </h2>
+
+<div class="imgbox" id="imgbox1">Box 1<br>
+  <img src="/img_5terre.jpg" alt="Italy" style="width:100%">
+  <button onclick="removeElement()">Remove</button>
+</div>
+
+<div class="imgbox" id="imgbox2">Box 2<br>
+  <img src="/img_forest.jpg" alt="Lights" style="width:100%">
+  <button onclick="changeVisibility()">Hide</button>
+</div>
+
+<div class="imgbox">Box 3<br>
+  <img src="/img_lights.jpg" alt="Forest" style="width:100%">
+  <button onclick="resetElement()">Reset All</button>
+</div>
+
+<script>
+function removeElement() {
+  document.getElementById("imgbox1").style.display = "none";
+}
+
+function changeVisibility() {
+  document.getElementById("imgbox2").style.visibility = "hidden";
+}
+
+function resetElement() {
+  document.getElementById("imgbox1").style.display = "block";
+  document.getElementById("imgbox2").style.visibility = "visible";
+}
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .flex-containerA {
+            display: flex;
+            background-color: lightgrey;
+            padding: 10px;
+            justify-content: space-between;
+        }
+
+        .flex-item {
+            margin: 10px;
+        }
+
+        .nav{
+            list-style-type: none;
+            display: inline;
+        }
+
+        .nav li{
+            display: inline;
+            padding: 10px;
+        }
+
+        @media screen and (max-width:800px){
+            .flex-container{
+                flex-direction: column;
+                align-items: left;
+            }
+            .nav li{
+                display:none;
+                padding: 0px;
+            }
+            .navbar{
+                display: none;
+            }
+            
+            
+        }
+    </style>
+</head>
+        
+            <body>
+    <div class="flex-containerA">
+        <div class="flex-item">
+            <h4 style="margin: 0;">logo</h4>
+        </div>
+        <div class="flex-item navbar">
+            <ul class="nav">
+                <li>home</li>
+                <li>about</li>
+                <li>services</li>
+            </ul>
+        </div>
+        <br>
+
+</html>

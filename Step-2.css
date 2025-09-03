@@ -1,0 +1,123 @@
+body{
+    /* background-image: url('/premium_photo-1673306778968-5aab577a7365.avif'); */
+    /* background-attachment: scroll; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: white ; 
+}
+#null{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+
+
+table tr{
+    border-bottom: 1px solid black;
+    
+}
+table th{
+    background-color:darkolivegreen;
+    text-align: left;
+    padding: 15px;
+}
+
+table td{
+    background-color:mediumaquamarine;
+    padding: 15px;
+}
+table{
+    width: 100%;
+    border-radius: 20px;
+}
+.para1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 40%;
+    box-shadow: 2px 2px 50px black;
+    border-radius: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-color: red;
+    border-style: solid;
+    outline: solid green 7px ;
+
+    
+}
+.table-container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* border-radius: 30px; */
+    box-shadow: 3px 3px 40px black;
+    border-color: red;
+    border-style: solid;
+    outline: solid green 5px ;
+}
+.button{
+    background-color: red;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.button:hover{
+    background-color: black;
+    color: green;
+}
+.Image-box{
+    float: left;
+    text-align: center;
+    width: 120px;
+    border: solid grey 2px;
+    margin: 4px;
+    padding: 6px;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: lightgreen;
+    border-radius: 30px;
+
+}
+.flex-container > div{
+    background-color: white;
+    width: 30%;
+    height: 30px;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 30px black;
+    text-align: center;
+}
+/* 
+.flex-item{
+    padding-top: 50px;
+} */
+ .imgbox{
+    float: left;
+    text-align: center;
+    width: 120px;
+    border: solid grey 2px;
+    margin: 4px;
+    padding: 6px;
+
+ }
