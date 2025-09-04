@@ -92,26 +92,26 @@ table{
 
 .flex-container{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     background-color: lightgreen;
     border-radius: 30px;
 
 }
 .flex-container > div{
     background-color: white;
-    width: 30%;
+    width: 0%; 
     height: 30px;
     margin: 10px;
-    padding: 20px;
+    padding:  20px;
     font-size: 30px;
     border-radius: 20px;
     box-shadow: 2px 2px 30px black;
     text-align: center;
 }
-/* 
+
 .flex-item{
     padding-top: 50px;
-} */
+
  .imgbox{
     float: left;
     text-align: center;
@@ -121,3 +121,4 @@ table{
     padding: 6px;
 
  }
+}
