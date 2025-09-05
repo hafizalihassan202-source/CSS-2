@@ -1,70 +1,132 @@
-<html>
-    <head>
-        <title>Header</title>
-        <style>
-            body {
-                padding: 0;
-                margin: 0;
-            }
-            .Flex-container {
-                display: flex;
-                /* width: 100%; */
-                background-color: lightblue;
-                padding: 0;
-                justify-content: space-between;
-            }
-            .flex-item {
-                margin: 10px;
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .flex-container {
+            display: flex;
+            width: 100%;
+            background-color: lightblue;
+            padding: 0;
+            justify-content: space-between;
+        }
+
+        .flex-item {
+            padding:10px 0;
+            margin: 1% 2%;
+        }
+
+        .nav {
+            list-style-type: none;
+            display: inline;
+            margin: 0;
+        }
+
+        .nav li {
+            display: inline;
+            padding: 10px;
+        }
+
+        .container {
+            margin: 0 2%;
+        }
+
+
+        @media screen and (max-width:800px) {
+            .flex-container {
+                flex-direction: column;
+                align-items: left;
                 width: 100%;
             }
-            .nav{
-                list-style-type: none;
-                display: inline;
-            }
-            .nav li{
-                display: inline;
-                padding: 10px;
-            }
-            .flex-item navbar{
-                text-align: right;
-            }
-            @media screen and (max-width:800px){
-                .Flex-container{
-                    flex-direction: column;
-                    align-items: left;
-                }
-                .nav li{
-                    display:none;
-                    padding: 0px;
-                }
-                .navbar{
-                    display: none;
-                }
+
+            .nav {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                padding: 0;
             }
 
-                
+            .nav li {
+                padding: 10px 0;
+            }
+
+            .flex-item {
+                margin: 0 4%;
+            }
+
+            .container {
+                margin: 0 4%;
+            }
+        }
+        #social {
+            display: flex;
+            justify-content: space-between;
+        }
+        .links{
+        margin-right: 20px;
+        }
+        .sl{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        h1{
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="flex-container">
+        <div class="flex-item">
+            <img src="/img_5terre.jpg" alt="Logo" style="width: 80px; height: 30px; border-radius: 10%;">
+        </div>
+        <div id="navbar" class="flex-item">
+            <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
 
 
+    <!-- content -->
+    <div class="container">
+        <h1>Responsive Page 1</h1>
+    </div>
+    <div id="social">
+        <div>
+            <img  src="/img_5terre.jpg" alt="" style="width: 200px ; height: 200px; border-radius: 10px;margin-left: 20px; margin-top: 30px;">
+            <br>
+            <a style="border: 2px solid black; border-radius: 3px; background-color: aquamarine; text-decoration: none; color: black; margin-left: 30px;" href="#">Logout</a>
+        </div>
+        <div>
+            <ul style="list-style-type: none; margin-top: 30px;">
+                <li class="links"><a class="sl" href="https://www.google.com/search?gs_ssp=eJzj4tLP1TfIyK1MKy5TYDRgdGDw4khLTE5Nys_PBgBmYAfL&q=facebook&rlz=1C1CHBF_enPK1154PK1154&oq=face&gs_lcrp=EgZjaHJvbWUqEwgBEC4YgwEYxwEYsQMY0QMYgAQyDwgAEEUYORiDARixAxiABDITCAEQLhiDARjHARixAxjRAxiABDIKCAIQABixAxiABDINCAMQABiDARixAxiABDIKCAQQABixAxiABDINCAUQABiDARixAxiABDIKCAYQABixAxiABDIGCAcQBRhA0gEIMjQxMmowajGoAgiwAgHxBQWZ-Nsu1A1I8QUFmfjbLtQNSA&sourceid=chrome&ie=UTF-8">Facebook</a>
+</li>
+<br>
+<br>
+<li class="links"><a class="sl" href="https://twitter.com/?lang=en"> Twitter</a></li>
+<br>
+<br>
+<li class="links"><a class="sl" href="https://www.instagram.com/?hl=en"> Instagram</a></li>
+            </ul>
 
-        </style>
-    </head>
-    <body>
-        <div class="Flex-container">
-            <div class="flex-item">
-                <h4 style="margin: 0 "> <a href="/img_5terre.jpg">Logo</a>
-                </div>
-                <div class="flex-item navbar" ;">
-                    <ul class="nav">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Support</a></li>
-                        <li><a href="#">Privacy</a></li>
-                        </ul>
-                        </div>
-                    </body>
+        </div>
+    </div>
+</body>
 
 </html>
